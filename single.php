@@ -14,11 +14,12 @@
 				<div class="row">
 					
 					<!-- /date and comments details -->
-					<div class="six columns date-div">
+					<div class="twelve columns date-div">
 						<span class="six"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 					</div>
-
-					<div class="six columns comments-div">
+				</div>
+				<div class="row">
+					<div class="twelve columns comments-div">
 						<span class="comments">
 							<?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
 						</span>
@@ -95,7 +96,7 @@
 	<!-- /section -->
 	</main>
 
-<div class="sidebar-div">
+<div class="sidebar-div" id="sidebar-div">
 	<?php get_sidebar(); ?>
 </div>
 

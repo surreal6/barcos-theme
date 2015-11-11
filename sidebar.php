@@ -1,15 +1,39 @@
 <!-- sidebar -->
   <aside class="sidebar" role="complementary" id="sidebar">
-     
-    <?php get_template_part('searchform'); ?>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <i class="fa fa-bars"></i> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          
+          <?php get_template_part('searchform'); ?>
 
-    <div class="sidebar-widget">
-      <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          
+          <div class="sidebar-widget">
+            <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-1')) ?>
+          </div>
+          
+        </div>
+
+        <div class="six columns">
+          
+          <div class="sidebar-widget">
+            <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+          </div>
+          
+        </div>
+      </div>
     </div>
 
-    <div class="sidebar-widget">
-      <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-    </div>
+
+
     
 
   </aside>

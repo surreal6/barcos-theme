@@ -23,7 +23,7 @@
         </script>
 
   </head>
-  <body <?php body_class(); ?>>
+  <body <?php body_class(); ?> id="body">
 
     <!-- wrapper -->
     <div class="wrapper" id="wrapper">
@@ -37,13 +37,13 @@
               <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
               <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
             </a>
-              <i class="fa fa-arrows fa-rotate-45" onclick="launchFullScreen(document.documentElement);"></i>
+
           </div>
           <!-- /logo -->
 
           <div id="sun-menu">
             <div  id="sun">
-              <button class="cn-button" id="cn-button"><h1 id="menu">+</h1></button>
+              <button class="cn-button" id="cn-button"><i class="fa fa-bars"></i></button>
             </div>
             <div class="cn-wrapper" id="cn-wrapper">
               <!-- nav -->

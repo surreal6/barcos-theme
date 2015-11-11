@@ -8,7 +8,7 @@
   <div class="pagination-div">
     <?php get_template_part('pagination'); ?>
   </div>
-  <div class="sidebar-div">
+  <div class="sidebar-div" id="sidebar-div">
     <?php get_sidebar(); ?>
   </div>
 </main>
