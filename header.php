@@ -43,7 +43,7 @@
 
           <div id="sun-menu">
             <div  id="sun">
-              <button class="cn-button" id="cn-button"><i class="fa fa-bars"></i></button>
+              <button class="cn-button" id="cn-button"><i class="fa fa-play"></i></button>
             </div>
             <div class="cn-wrapper" id="cn-wrapper">
               <!-- nav -->
