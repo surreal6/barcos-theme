@@ -1,10 +1,10 @@
 /*
-	Theme Name: HTML5 Blank
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
-	Version: 1.4.3
-	Author: Todd Motto (@toddmotto)
-	Author URI: http://toddmotto.com
+	Theme Name: barcos1
+	Theme URI: http://barcosenlamancha.com
+	Description: Barcos en La Mancha WordPress Theme
+	Version: 0.0.1
+	Author: Carlos Padial (@surreal)
+	Author URI: http://surreal.asturnazari.com
 	Tags: Blank, HTML5, CSS3
 
 	License: MIT
@@ -31,8 +31,10 @@ html {
 }
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	color:#444;
+	color:#fff;
+	background-color: #5799FF;
 }
+
 /* clear */
 .clear:before,
 .clear:after {
@@ -51,11 +53,11 @@ img {
 	vertical-align:bottom;
 }
 a {
-	color:#444;
+	color:#ddd;
 	text-decoration:none;
 }
 a:hover {
-	color:#444;
+	color:#ddd;
 }
 a:focus {
 	outline:0;
@@ -63,6 +65,7 @@ a:focus {
 a:hover,
 a:active {
 	outline:0;
+	color:#003146;
 }
 input:focus {
 	outline:0;
@@ -75,33 +78,98 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
-	margin:0 auto;
+	width:100%;
 	position:relative;
 }
 /* header */
 .header {
-
 }
 /* logo */
 .logo {
-
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 2;
+	height: 80px !important;
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
 }
-.logo-img {
 
+.logo-img{
+	height: 100%;
+	float:left;
 }
+
+.open-sea > .logo{
+	top:-50px;
+	opacity: 0.3;
+	height:350px !important;
+	-webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.logo:hover {
+	width: 100%;
+	z-index: 25;
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
 /* nav */
 .nav {
-
 }
+
+section {
+	width: 70%;
+	padding: 2rem;
+}
+
 /* sidebar */
 .sidebar {
-
+	background-color: #aa6633;
+	position:absolute;
+	width: 30%;
+	top:140px;
+	right:0px;
+	padding: 1rem;
+	background: #fff09d;
+	background: -moz-linear-gradient(left,  #fff09d 0%, #aa6633 99%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fff09d), color-stop(99%,#aa6633));
+	background: -webkit-linear-gradient(left,  #fff09d 0%,#aa6633 99%);
+	background: -o-linear-gradient(left,  #fff09d 0%,#aa6633 99%);
+	background: -ms-linear-gradient(left,  #fff09d 0%,#aa6633 99%);
+	background: linear-gradient(to right,  #fff09d 0%,#aa6633 99%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff09d', endColorstr='#aa6633',GradientType=1 );
 }
+
+.sidebar .hide {
+	display: none;
+}
+
+.sidebar h3 {
+	color: #000;
+}
+
+.sidebar a, .sidebar li {
+	color: #330;
+}
+
+.sidebar a:hover {
+	color: #fff;
+}
+
+
 /* footer */
 .footer {
-
+	background-color: #59351b;
+	min-height: 150px;
+	bottom: 0px;
+	padding: 1rem;
 }
 
 /*------------------------------------*\
@@ -289,7 +357,7 @@ a img.aligncenter {
 		page-break-inside:avoid;
 	}
 	img {
-		max-width:100% !important;
+		/*max-width:100% !important;*/
 	}
 	@page {
 		margin:0.5cm;
@@ -304,4 +372,14 @@ a img.aligncenter {
 	h3 {
 		page-break-after:avoid;
 	}
+}
+
+
+.search {
+	background-color: #0f9e53;
+	padding: 1rem;
+	position: relative;
+	top:0px;
+	overflow: scroll;
+	width: 100%;
 }
