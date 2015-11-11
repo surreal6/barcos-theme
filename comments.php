@@ -19,6 +19,12 @@
 
 <?php endif; ?>
 
-<?php comment_form(); ?>
+<div class="addcomment-div">
+  <h1>añadir un comentario</h1>
+  <div class="comment-template-div">
+    <?php comment_form(); ?>
+  </div>
+</div>
+
 
 </div>

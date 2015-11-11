@@ -98,6 +98,14 @@ input:focus {
   text-align: left;
   padding-left: 1rem;
   display: none;
+  width:100%;
+}
+
+.comments-template-div textarea,
+.comments-template-div input,
+.comments-template-div p {
+  width: 100%;
+  color:#000;
 }
 
 .comments-div:hover .comments-template-div {
@@ -105,6 +113,20 @@ input:focus {
   position: relative;
   left:0px;
 }
+
+.comment-template-div,
+.addcomment-div:hover h1 {
+  display: none;
+}
+
+.addcomment-div:hover .comment-template-div {
+  display: inline-block;
+}
+
+.comments li {
+  text-decoration: none;
+}
+
 
 .categories-div{
   background-color: #4072BF;
@@ -126,6 +148,11 @@ input:focus {
 .bitacora-div, .single-div {
   width: 80%;
   float:right;
+}
+
+.bitacora-div p, .single-div p {
+  text-align: justify;
+  width: 90%;
 }
 
 .article {
@@ -186,6 +213,11 @@ input:focus {
     display: inline-block;
 }
 
+.sidebar:hover * {
+  display: inline-block;
+  float:left;
+}
+
 .search {
   border-radius: 1em 1em 0 0;
   text-align: center;
@@ -199,15 +231,11 @@ input:focus {
   display: none;
 }
 
-.sidebar:hover * {
-  display: inline-block;
-}
-
 .search button {
   width: 10%;
   border:none;
   background-color: #0f9e53;
-  padding-left: 0;
+  padding-left: 1em;
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -219,7 +247,7 @@ input:focus {
 }
 
 .search input {
-  width: 90%  
+  width: 90%; 
   background-color: #60BF8D;
   border-style: dotted;
   border-width: 2px;
@@ -812,7 +840,10 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 	background-color: #59351b;
   display: inline-block;
 	padding: 1rem;
+  width: 100%;
+  position: relative;
 }
+
 
 /*------------------------------------*\
     PAGES

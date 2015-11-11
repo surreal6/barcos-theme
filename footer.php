@@ -1,6 +1,6 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-				<div class="container">
+				<div class="container footer-div">
 					<div class="row">
 						<!-- copyright -->
 						<p class="copyright">

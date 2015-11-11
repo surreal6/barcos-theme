@@ -10,21 +10,28 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<div class="container single-div">
+
 				<div class="row">
+					
+					<!-- /date and comments details -->
 					<div class="six columns date-div">
 						<span class="six"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 					</div>
-					<div class="five columns comments-div">
-						<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-						<div class="row u-full-width comments-template-div">
+
+					<div class="six columns comments-div">
+						<span class="comments">
+							<?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
+						</span>
+						<div class="comments-template-div">
 							<?php comments_template(); ?>						
 						</div>
 					</div>
 				</div>
-				<!-- /post details -->
-					</div>
-				</div>
+					
+				
 				<div class="row">
+
+					<!-- /title and thumbnail -->
 					<div class="eight columns title-div">
 						<!-- post title -->
 						<h1>
@@ -44,18 +51,14 @@
 				</div>
 						
 				<div class="row">
+				<!-- dynamic content -->
 					<div class="twelve columns">
 						<?php the_content(); // Dynamic Content ?>						
 					</div>
 				</div>
 
-<!-- 				<div class="row">
-					<div class="twelve columns author-div">
-						<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-					</div>
-				</div>
- -->
 				<div class="row">
+				<!-- categories, tags and edit link -->
 					<div class="four columns categories-div">
 						<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 					</div>
