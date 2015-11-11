@@ -27,6 +27,7 @@
 	    	closeNav();
 	  	}
 	}
+
 	function openNav(){
 		open = true;
     button.innerHTML = "<h1 id='menu'><i class='fa fa-stop'></i></h1>";
@@ -37,6 +38,7 @@
     classie.add(overlay, 'on-overlay');
 	  classie.add(sidebar, 'open-header');
 	}
+  
 	function closeNav(){
 		open = false;
 		button.innerHTML = "<h1 id='menu'><i class='fa fa-play'></i></h1>";

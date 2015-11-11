@@ -52,7 +52,7 @@
                 <ul>
                   <li><a href="index.php/de-que-va-esto/" title="de que vá esto?"><i class="fa fa-question"></i></a></li> 
                   <li><a href="index.php/monograficos/" title="monográficos"><i class="fa fa-map"></i></a></li> 
-                  <li><a href="/barcosenlamancha/index.php" title="bitácora"><i class="fa fa-compass"></i></a></li>  
+                  <li><a href="<?php echo home_url(); ?>" title="bitácora"><i class="fa fa-compass"></i></a></li>  
                   <li><a href="index.php/rutas-de-exploracion/" title="rutas de exploracion"><i class="fa fa-map-signs"></i></a></li>    
                   <li><a href="index.php/contacto/" title="contacto"><i class="fa fa-envelope"></i></a></li>  
                 </ul>
