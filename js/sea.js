@@ -118,3 +118,13 @@ function run(){
 window.addEventListener( 'load', loadCanvas, false );
 window.addEventListener( 'load', drawWaveCanvas, false );
 
+
+ function launchFullScreen(element) {
+ if(element.requestFullScreen) {
+   element.requestFullScreen();
+ } else if(element.mozRequestFullScreen) {
+   element.mozRequestFullScreen();
+ } else if(element.webkitRequestFullScreen) {
+   element.webkitRequestFullScreen();
+ }
+ }

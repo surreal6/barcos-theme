@@ -1,13 +1,16 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> CC-by-nc-nd <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-          Diseño web: <a href="http://surreal.asturnazari.com">Carlos Padial</a>.
-				</p>
-				<!-- /copyright -->
+				<div class="container">
+					<div class="row">
+						<!-- copyright -->
+						<p class="copyright">
+							&copy; <?php echo date('Y'); ?> CC-by-nc-nd <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
+							<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+		          Diseño web: <a href="http://surreal.asturnazari.com">Carlos Padial</a>.
+						</p>
+						<!-- /copyright -->
+					</div>
+				</div>
 
 			</footer>
 			<!-- /footer -->
@@ -16,6 +19,10 @@
 		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
+
+
+		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/polyfills.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/sun.js"></script>
 
 		<!-- analytics -->
 		<script>

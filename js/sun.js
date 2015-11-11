@@ -29,7 +29,7 @@
 	}
 	function openNav(){
 		open = true;
-    button.innerHTML = "-";
+    button.innerHTML = "<h1 id='menu'>-</h1>";
     classie.add(wrapper, 'opened-nav');
 	  classie.add(header, 'open-sea');
 	  classie.add(sunDiv, 'open-sun-div');
@@ -39,7 +39,7 @@
 	}
 	function closeNav(){
 		open = false;
-		button.innerHTML = "+";
+		button.innerHTML = "<h1 id='menu'>+</h1>";
 		classie.remove(wrapper, 'opened-nav');
 		classie.remove(header, 'open-sea');
 		classie.remove(sunDiv, 'open-sun-div');
@@ -72,6 +72,7 @@
 	 //  }
   // }
   
+ 
 
 
 })();

@@ -12,13 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/sea.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/sun-style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.4.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/Kingthings-Trypewriter-fontfacekit/stylesheet.css" charset="utf-8" />
-    
-
     <?php wp_head(); ?>
     <script>
         // conditionizr.com
@@ -44,6 +37,7 @@
               <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
               <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
             </a>
+              <i class="fa fa-arrows fa-rotate-45" onclick="launchFullScreen(document.documentElement);"></i>
           </div>
           <!-- /logo -->
 
@@ -56,11 +50,11 @@
               <nav class="nav" role="navigation">
                 <!-- <?php html5blank_nav(); ?> -->
                 <ul>
-                  <li><a href="#DE QUE VA" title="de que vá?"><i class="fa fa-question"></i></a></li> 
-                  <li><a href="#BITACORA" title="bitácora"><i class="fa fa-compass"></i></a></li>  
-                  <li><a href="#MONOGRAFICOS" title="monográficos"><i class="fa fa-map"></i></a></li> 
-                  <li><a href="#RUTAS DE EXPLORACION" title="rutas de exploracion"><i class="fa fa-map-signs"></i></a></li>    
-                  <li><a href="#CONTACTO" title="contacto"><i class="fa fa-envelope"></i></a></li>  
+                  <li><a href="index.php/de-que-va-esto/" title="de que vá esto?"><i class="fa fa-question"></i></a></li> 
+                  <li><a href="index.php/monograficos/" title="monográficos"><i class="fa fa-map"></i></a></li> 
+                  <li><a href="/barcosenlamancha/index.php" title="bitácora"><i class="fa fa-compass"></i></a></li>  
+                  <li><a href="index.php/rutas-de-exploracion/" title="rutas de exploracion"><i class="fa fa-map-signs"></i></a></li>    
+                  <li><a href="index.php/contacto/" title="contacto"><i class="fa fa-envelope"></i></a></li>  
                 </ul>
               </nav>
               <!-- /nav -->
@@ -69,7 +63,6 @@
       
           <div id="cn-overlay" class="cn-overlay"></div>
   
-          <script src="<?php echo get_template_directory_uri(); ?>/js/lib/polyfills.js"></script>
-          <script src="<?php echo get_template_directory_uri(); ?>/js/sun.js"></script>
+          
       </header>
       <!-- /header -->
