@@ -1,3 +1,26 @@
+
+/* SEA STYLE */
+
+#waveCanvas {
+  z-index: 10 !important;
+  width: 100%;
+  height: 101%;
+  z-index: 1;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}  
+
+.open-sea {
+  height: 205px !important;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+
+
 /* SUN STYLE */
 
 :focus {
@@ -5,9 +28,9 @@
   }
 
 .csstransforms .cn-wrapper {
-  z-index: 25;
-  position: relative;
-  top: -120px;
+  z-index: -3;
+  position: absolute;
+  top: 0px;
   left: 50%;
   font-size: 1em;
   width: 26em;
@@ -33,10 +56,10 @@
 }
 
 .csstransforms .opened-nav {
-  z-index: 2;
+  z-index: 4;
   border-radius: 50%;
   left: 50%;
-  top: -260px;
+  top: -180px;
   opacity: 1;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -53,15 +76,13 @@
 }
 
 .cn-overlay {
-  z-index: 1;
+  z-index: 0;
   width: 100%;
-  height: 300px;
-  background-color: rgba(255,235,124,0.6);
-  position: absolute;
+  height: 100%;
+  position: absolute !important;
   top: 0px;
-  left: 0;
-  /*bottom: 0;*/
-  right: 0;
+  left: 0px;
+  background-color: rgba(255,235,124,0.6);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .3s ease;
@@ -69,7 +90,7 @@
   transition: all .3s ease;
 }
 
-.cn-overlay.on-overlay {
+.cn-overlay .on-overlay {
   visibility: visible;
   opacity: 1;
   -webkit-transition: all .3s ease;
@@ -78,50 +99,48 @@
 }
 
 .cn-button {
-  z-index: 3;
-  position: relative;
-  left: 90%;
-  top: -80px;
+  z-index: 5;
   border: none;
   background: none;
-  text-align: center;
   font-size: 1.8em;
   padding-bottom: 1em;
   height: 3.5em;
   width: 3.5em;
-  margin-left: -1.75em;
+  /*margin-left: -1.75em;*/
   border-radius: 50%;
   cursor: pointer;
   color: #ff3d33;
   /*background-color: #ffe033;*/
   background: #ffe033;
-background: -moz-radial-gradient(center, ellipse cover,  #ffe033 50%, #fff8db 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#ffe033), color-stop(100%,#fff8db));
-background: -webkit-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: -o-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: -ms-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: radial-gradient(ellipse at center,  #ffe033 50%,#fff8db 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', endColorstr='#fff8db',GradientType=1 );
+  background: -moz-radial-gradient(center, ellipse cover,  #ffe033 0%, #fff8db 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffe033), color-stop(100%,#fff8db));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffe033 0%,#fff8db 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #ffe033 0%,#fff8db 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ffe033 0%,#fff8db 100%);
+  background: radial-gradient(ellipse at center,  #ffe033 0%,#fff8db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', endColorstr='#fff8db',GradientType=1 );
 
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -moz-transform: scale(1);
   transform: scale(1);
+  top: -80px;
 
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
 
-  -webkit-transition: top 1s ease;
+  /*-webkit-transition: top 1s ease;
   -moz-transition: top 1s ease;
   transition: top 1s ease;
 
   -webkit-transition: left 1s ease;
   -moz-transition: left 1s ease;
-  transition: left 1s ease;
+  transition: left 1s ease;*/
 
 }
 
+/*
 .stickysun {
   top: 15px;
   -webkit-transition: all .3s ease;
@@ -135,20 +154,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', end
   -webkit-transition: left 1s ease;
   -moz-transition: left 1s ease;
   transition: left 1s ease;
-
-}
+}*/
 
 .open-sun {
+  background: #ffe033;
+  background: -moz-radial-gradient(center, ellipse cover,  #ffe033 50%, #fff8db 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#ffe033), color-stop(100%,#fff8db));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: radial-gradient(ellipse at center,  #ffe033 50%,#fff8db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', endColorstr='#fff8db',GradientType=1 );
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   transform: scale(1.5);
   top: -90px;
-  left: 50%;
+  
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
-
 
   -webkit-transition: top 1s ease;
   -moz-transition: top 1s ease;
@@ -157,6 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', end
   -webkit-transition: left 1s ease;
   -moz-transition: left 1s ease;
   transition: left 1s ease;
+
 
 }
 
@@ -258,13 +284,13 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   /*background-color: hsla(0, 88%, 63%, 1);*/
 
   background: #ffe033;
-background: -moz-radial-gradient(center, ellipse cover,  #ffe033 50%, #fff8db 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#ffe033), color-stop(100%,#fff8db));
-background: -webkit-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: -o-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: -ms-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
-background: radial-gradient(ellipse at center,  #ffe033 50%,#fff8db 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', endColorstr='#fff8db',GradientType=1 );
+  background: -moz-radial-gradient(center, ellipse cover,  #ffe033 50%, #fff8db 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#ffe033), color-stop(100%,#fff8db));
+  background: -webkit-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #ffe033 50%,#fff8db 100%);
+  background: radial-gradient(ellipse at center,  #ffe033 50%,#fff8db 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', endColorstr='#fff8db',GradientType=1 );
 }
 
 .csstransforms .cn-wrapper li:nth-child(even) a {
@@ -273,13 +299,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe033', end
 
 
  background: #fff8db;
-background: -moz-radial-gradient(center, ellipse cover,  #fff8db 0%, #ffe772 78%, #ffe033 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff8db), color-stop(78%,#ffe772), color-stop(100%,#ffe033));
-background: -webkit-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
-background: -o-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
-background: -ms-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
-background: radial-gradient(ellipse at center,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8db', endColorstr='#ffe033',GradientType=1 );
+  background: -moz-radial-gradient(center, ellipse cover,  #fff8db 0%, #ffe772 78%, #ffe033 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff8db), color-stop(78%,#ffe772), color-stop(100%,#ffe033));
+  background: -webkit-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
+  background: -o-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
+  background: -ms-radial-gradient(center, ellipse cover,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
+  background: radial-gradient(ellipse at center,  #fff8db 0%,#ffe772 78%,#ffe033 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8db', endColorstr='#ffe033',GradientType=1 );
 
 }
 
@@ -289,13 +315,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8db', end
   /*background-color: hsla(0, 88%, 70%, 1);*/
 
   background: #ff8e2b;
-background: -moz-linear-gradient(-45deg,  #ff8e2b 0%, #ff9e4f 50%, #ff7003 51%, #ff7409 71%, #ff6f0f 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff8e2b), color-stop(50%,#ff9e4f), color-stop(51%,#ff7003), color-stop(71%,#ff7409), color-stop(100%,#ff6f0f));
-background: -webkit-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: -o-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: -ms-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: linear-gradient(135deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8e2b', endColorstr='#ff6f0f',GradientType=1 );
+  background: -moz-linear-gradient(-45deg,  #ff8e2b 0%, #ff9e4f 50%, #ff7003 51%, #ff7409 71%, #ff6f0f 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff8e2b), color-stop(50%,#ff9e4f), color-stop(51%,#ff7003), color-stop(71%,#ff7409), color-stop(100%,#ff6f0f));
+  background: -webkit-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: -o-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: -ms-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: linear-gradient(135deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8e2b', endColorstr='#ff6f0f',GradientType=1 );
 
 }
 
@@ -309,21 +335,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8e2b', end
   /*background-color: hsla(0, 88%, 70%, 1);*/
 
   background: #ff8e2b;
-background: -moz-linear-gradient(-45deg,  #ff8e2b 0%, #ff9e4f 50%, #ff7003 51%, #ff7409 71%, #ff6f0f 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff8e2b), color-stop(50%,#ff9e4f), color-stop(51%,#ff7003), color-stop(71%,#ff7409), color-stop(100%,#ff6f0f));
-background: -webkit-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: -o-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: -ms-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-background: linear-gradient(135deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8e2b', endColorstr='#ff6f0f',GradientType=1 );
-
+  background: -moz-linear-gradient(-45deg,  #ff8e2b 0%, #ff9e4f 50%, #ff7003 51%, #ff7409 71%, #ff6f0f 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ff8e2b), color-stop(50%,#ff9e4f), color-stop(51%,#ff7003), color-stop(71%,#ff7409), color-stop(100%,#ff6f0f));
+  background: -webkit-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: -o-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: -ms-linear-gradient(-45deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  background: linear-gradient(135deg,  #ff8e2b 0%,#ff9e4f 50%,#ff7003 51%,#ff7409 71%,#ff6f0f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8e2b', endColorstr='#ff6f0f',GradientType=1 );
 }
-.csstransforms .cn-wrapper li:not(.active) a:focus
-{
+
+.csstransforms .cn-wrapper li:not(.active) a:focus{
     position:fixed;
 }
  
-
 /* fallback */
 .no-csstransforms .cn-button {
   display: none;

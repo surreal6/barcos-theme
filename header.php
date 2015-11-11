@@ -14,8 +14,6 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/sea.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/sea-style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/sun-style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/font-awesome-4.4.0/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/Kingthings-Trypewriter-fontfacekit/stylesheet.css" charset="utf-8" />
@@ -49,14 +47,14 @@
           </div>
           <!-- /logo -->
 
-          <div id="wavesbox">    </div>
-
-          <div id="sun">
-            <button class="cn-button" id="cn-button"><h1 id="menu">+</h1></button>
+          <div id="sun-menu">
+            <div  id="sun">
+              <button class="cn-button" id="cn-button"><h1 id="menu">+</h1></button>
+            </div>
             <div class="cn-wrapper" id="cn-wrapper">
               <!-- nav -->
               <nav class="nav" role="navigation">
-                <!-- <?php html5blank_nav(); ?> --> 
+                <!-- <?php html5blank_nav(); ?> -->
                 <ul>
                   <li><a href="#DE QUE VA" title="de que vá?"><i class="fa fa-question"></i></a></li> 
                   <li><a href="#BITACORA" title="bitácora"><i class="fa fa-compass"></i></a></li>  

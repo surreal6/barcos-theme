@@ -90,8 +90,6 @@ function Wave( $canvas, $y, $colour, $alpha ){
     }
 }
 
-
-
 // create a new canvas element inside a div (id:waveCanvas)
 // and draw an animated svg with waves into canvas element
 var canvas = null;
@@ -100,7 +98,7 @@ var waves = null;
 function loadCanvas() {
         var waveCanvas = document.createElement('canvas');
         waveCanvas.id = "waveCanvas";
-        var list = document.getElementById("wavesbox");
+        var list = document.getElementById("header");
         list.insertBefore(waveCanvas, list.childNodes[0]); 
 }
 
