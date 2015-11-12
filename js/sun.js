@@ -30,7 +30,6 @@
 
 	function openNav(){
 		open = true;
-    button.innerHTML = "<h1 id='menu'><i class='fa fa-stop'></i></h1>";
     classie.add(wrapper, 'opened-nav');
 	  classie.add(header, 'open-sea');
 	  classie.add(sunDiv, 'open-sun-div');
@@ -41,7 +40,6 @@
   
 	function closeNav(){
 		open = false;
-		button.innerHTML = "<h1 id='menu'><i class='fa fa-play'></i></h1>";
 		classie.remove(wrapper, 'opened-nav');
 		classie.remove(header, 'open-sea');
 		classie.remove(sunDiv, 'open-sun-div');

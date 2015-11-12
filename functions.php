@@ -285,7 +285,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '...<h3 class="view-more-div"><a class="view-article" href="' . get_permalink($post->ID) . '"> ' . __('View Article', 'html5blank') . '</a></h3>';
 }
 
 // Remove Admin bar

@@ -7,13 +7,6 @@
         </div>
       </div>
       <div class="row">
-        <div class="twelve columns">
-          
-          <?php get_template_part('searchform'); ?>
-
-        </div>
-      </div>
-      <div class="row">
         <div class="six columns">
           
           <div class="sidebar-widget">
@@ -28,6 +21,13 @@
             <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
           </div>
           
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+          
+          <?php get_template_part('searchform'); ?>
+
         </div>
       </div>
     </div>

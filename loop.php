@@ -11,6 +11,10 @@
 					<h2>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 					</h2>
+			    <div class="date-loop-div">
+						<span class="date"><?php the_time('j F, Y'); ?></span>
+			    </div>
+					
 					<!-- /post title -->
 				</div>
 		    <div class="two columns thumbnail-div">
@@ -24,18 +28,15 @@
 				</div>
 			</div>
 		  <div class="row">
-		    <div class="twelve columns">
+		    <div class="twelve columns excerpt-div">
 					<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
 				</div>
 			</div>
 			<div class="row">
-		    <div class="six columns date-div">
-					<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-		    </div>
-		    <div class="three columns post-edit-link-div">
+		    <div class="four columns post-edit-link-div  info">
 					<?php edit_post_link(); ?>
 		    </div>
-		    <div class="three columns comments-div">
+		    <div class="four columns comments-loop-div info">
 					<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
 		    </div>
 			</div>	

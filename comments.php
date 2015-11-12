@@ -20,7 +20,7 @@
 <?php endif; ?>
 
 <div class="addcomment-div">
-  <h1>añadir un comentario</h1>
+  <h3>añadir un comentario</h3>
   <div class="comment-template-div">
     <?php comment_form(); ?>
   </div>

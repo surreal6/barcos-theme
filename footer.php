@@ -3,20 +3,21 @@
 				<div class="container footer-div">
 
 					<div class="row">
+
 						<div class="two columns">
 							<a><i class="fa fa-arrows fa-rotate-45" onclick="launchFullScreen(document.documentElement);"></i></a>
 							<a href="wp-admin/"><i class="fa fa-home"></i></a>
 						</div>
-						<div class="two columns">
-						</div>
-						<div class="four columns">
+
+						<div class="five columns">
 							<!--  copyright -->
 							<p class="copyright">
 								All content &copy; <?php echo date('Y'); ?> CC-BY-NC-ND <a href=""><?php bloginfo('name'); ?></a>. 
 							</p>
 							<!-- /copyright -->
 						</div>
-						<div class="four columns">
+
+						<div class="five columns">
 							<!--  theme copyright -->
 							<p class="copyright">
 								Theme design &copy; <?php echo date('Y'); ?> CC-BY-SA <a href="http://surreal.asturnazari.com">Carlos Padial </a> <?php _e('Powered by', 'html5blank'); ?>
@@ -24,7 +25,9 @@
 							</p>
 							<!-- / theme copyright -->
 						</div>
+
 					</div>
+					
 				</div>
 
 			</footer>
@@ -36,8 +39,6 @@
 		<?php wp_footer(); ?>
 
 
-		<script src="<?php echo get_template_directory_uri(); ?>/js/lib/polyfills.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/sun.js"></script>
 
 		<!-- analytics
 		<script>

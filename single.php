@@ -4,6 +4,10 @@
 	<!-- section -->
 	<section>
 
+		<div class="sidebar-div" id="sidebar-div">
+			<?php get_sidebar(); ?>
+		</div>
+		
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 		<!-- article -->
@@ -11,15 +15,14 @@
 
 			<div class="container single-div">
 
-				<div class="row">
+				<div class="row content-div">
 					
 					<!-- /date and comments details -->
-					<div class="twelve columns date-div">
-						<span class="six"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+					<div class="six columns">
+						<br>
 					</div>
-				</div>
-				<div class="row">
-					<div class="twelve columns comments-div">
+
+					<div class="six columns comments-div">
 						<span class="comments">
 							<?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
 						</span>
@@ -30,17 +33,17 @@
 				</div>
 					
 				
-				<div class="row">
+				<div class="row content-div">
 
 					<!-- /title and thumbnail -->
-					<div class="eight columns title-div">
+					<div class="ten columns title-div">
 						<!-- post title -->
 						<h1>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 						</h1>
 						<!-- /post title -->
 					</div>
-					<div class="four columns thumbnail-div">
+					<div class="two columns thumbnail-div">
 						<!-- post thumbnail -->
 						<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -51,17 +54,20 @@
 					</div>
 				</div>
 						
-				<div class="row">
+				<div class="row content-div">
+						<span class="twelve columns date-div"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+				</div>
+				<div class="row content-div">
 				<!-- dynamic content -->
 					<div class="twelve columns">
 						<?php the_content(); // Dynamic Content ?>						
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row content-div">
 				<!-- categories, tags and edit link -->
 					<div class="four columns categories-div">
-						<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
+						<?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?>
 					</div>
 					<div class="four columns tags-div">
 						<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
@@ -94,10 +100,9 @@
 
 	</section>
 	<!-- /section -->
+
+
 	</main>
 
-<div class="sidebar-div" id="sidebar-div">
-	<?php get_sidebar(); ?>
-</div>
 
 <?php get_footer(); ?>
