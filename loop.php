@@ -14,7 +14,6 @@
 			    <div class="date-loop-div">
 						<span class="date"><?php the_time('j F, Y'); ?></span>
 			    </div>
-					
 					<!-- /post title -->
 				</div>
 		    <div class="two columns thumbnail-div">

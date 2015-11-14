@@ -154,7 +154,6 @@ input:focus {
 .comments-div:hover .comments-template-div {
   display: inline-block;
   position: absolute;
-  z-index: 100;
   left:0px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -203,7 +202,6 @@ input:focus {
 .loop-article {
   margin-bottom: 1em;
   padding: 1em;
-  z-index: 20;
   width: 80%;
 }
 
@@ -243,14 +241,11 @@ input:focus {
     STRUCTURE
 \*------------------------------------*/
 
-.sticky {
-}
-
 /* wrapper */
 .wrapper {
 }
-/* header */ /*------------------------------------*/
 
+/* reset */ /*------------------------------------*/
 .header * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -260,12 +255,20 @@ input:focus {
   position: relative;
 }
 
+/* header */ /*------------------------------------*/
 #header {
+  height: 4em;
   width: 100%;
-  height: 50px;
-  z-index:30;
-  position: relative;
-  overflow: hidden;
+}
+
+.header-div {
+  z-index: 1;
+  height: 4em;
+  width: 100%;
+  position:fixed;
+  margin: 0px;
+  top:0px;
+  background-color: #A5E9FF;
   background-color: #8FCAFF;
   background: #8fcaff;
   background: -moz-linear-gradient(-45deg,  #8fcaff 53%, #f0f9ff 80%);
@@ -280,25 +283,124 @@ input:focus {
   transition: all .3s ease;
 }
 
-#header:hover {
-  height: 16em;
+.header-div:hover {
+  height:12em;
+  position:absolute;
 }
 
-/* sections */     /*------------------------------------*/
+.sun-div {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0%;
+  left: 90%;
+  margin-left: -1em;
+}
+
+.header-div:hover .sun-div {
+  width: 5em;
+  height: 5em;
+  left:50%;
+  text-align: center;
+}
+
+.sidebar-content-div {
+  z-index: 25;
+  width: 0%;
+  height:0%;
+  overflow: hidden;
+  border-radius: 0.3em;
+  background-color: #B4AB9A;
+  padding: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header-div:hover .sidebar-content-div {
+  display: inline-block;
+  margin-top: -0.6em;
+  margin-bottom:0em;
+  padding: 1em;
+  width: 22em;
+  width: 80%;
+  height: auto;
+}
+
+/* sidebar */  /*------------------------------------*/
+
+.sidebar-content-div h3 {
+  color: #000;
+  text-align: center;
+}
+
+.sidebar-content-div a, .sidebar-content-div li {
+  color: #330;
+}
+
+.sidebar-content-div a:hover {
+  color: #fff;
+}
+
+.sidebar-div {
+  margin: 0 auto;
+}
+
+.isla-top-div {
+  z-index: 25;
+  width:8em;
+  margin-top: 2em;
+  position: absolute;
+  pointer-events: none;
+  bottom:0%;
+  left:0px;
+}
+
+.isla-top-img, .isla-bottom-img {
+  width: 100%;
+  display: block;
+}
+
+.isla-bottom-div {
+  z-index: 25;
+  width:8em;
+  margin-top: -0.6em;
+}
+
+.header-div:hover .isla-top-div, 
+.header-div:hover .isla-bottom-div {
+  width: 22em;
+}
+
+.header-div:hover .isla-bottom-div {
+  position: relative;
+  margin-top:-0.6em;
+}
+
+
+/* sections */     /*---------------------
+---------------*/
 
 section {
 }
 
+.content-div {
+    width: 80%;
+    position: relative;
+    margin:4em auto 3em auto;
+    padding:1em;
+    float:center;
+    text-align: center;
+    background-color: green;
+  }
 
 .bitacora-title {
   text-align: center;
-
 }
 
 .bitacora-div, .single-div {
-  width: 80%;
-  max-width: 960px;
-  float: right;
+  
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -321,117 +423,18 @@ section {
   text-align: center;
 }
 
-.sidebar-div {
-  float:left;
-  position:relative;
-  margin-top: 100px;
-  text-align: center;
-  z-index:30;
-  width: 20%;
-  height: 0px;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-} 
-
-.isla-div {
-  height:0px;
-  margin: 0px;
-  float: right;
-  margin-right: -10em;
-}
-
-.isla-top{
-  width: 25em;
-  height: 13em;
-  overflow: hidden;
-  position: relative;
-  top:-13em;
-  right:0em;
-}
-
-.isla-bottom{
-  width: 25em;
-  height: 2em;
-  overflow: hidden;
-  position: relative;
-  bottom:0em;
-  right: 0;
-}
-
-.isla-bottom img{
-  position: relative;
-  top: -13em;
-}
-
-.sidebar-div:hover{
-  position:absolute;
-  width: 50%;
-  height: auto;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.sidevar-div:hover .isla-div {
-  float: left;
-  margin-right: unset;
-}
-
-.sidebar-div .fa {
-  margin-bottom: 0.3em;
-  margin-top: 0.3em;
-  color: #fff;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.sidebar-div .sidebar-widget,
-.sidebar-div .search {
-  display: none;
-}
-
-.sidebar-div:hover .sidebar-widget,
-.sidebar-div:hover .search {
-  display: unset;
-}
-
-
-/* sidebar */  /*------------------------------------*/
-.sidebar {
-  background-color: #B4AB9A;
-  border-radius: 1em;
-  width: 100%;
-  height: 100%;
-  z-index: 20;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.sidebar h3 {
-  color: #000;
-  margin-left: 10px;
-}
-
-.sidebar a, .sidebar li {
-  color: #330;
-}
-
-.sidebar a:hover {
-  color: #fff;
-}
 
 
 /* footer */     /*------------------------------------*/
 
-.footer {
-  background-color: #59351b;
-  position: relative;
-  width: 100%;
-  display: inline-block;
+.footer-div {
+  background-color: #8A5B37;
+  position:relative;
+  margin-top: 1em;
+  margin-bottom: -1em;
   padding: 1em;
+  display: inline-block;
+  width: 100%;
 }
 
 .footer .fa {
@@ -440,58 +443,6 @@ section {
 
 /*------------------------------------*//*------------------------------------*/
 /*------------------------------------*//*------------------------------------*/
-
-/* logo */    /*------------------------------------*/
-.logo {
-  display: none;
-  position: absolute;
-  left:0px;
-  top:0px;
-  z-index: 60;
-  height: 3em;
-  opacity: 1;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-#header:hover .logo{
-  opacity: 0.3;
-  height:unset;
-  width: 50%;
-  z-index: 1;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-.logo-img{
-  height: 100%;
-  float:left;
-}
-
-.logo i{
-  color: #fff8;
-}
-
-.logo i:hover{
-  color: #fff;
-}
-
-.logo:hover {
-  width: 100%;
-  height: unset;
-  z-index: 9;
-  opacity: 1;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
- 	
-/* nav */ 
-.nav {
-}
 
 .fa-rotate-45 {
   -webkit-transform: rotate(45deg);
@@ -504,10 +455,9 @@ section {
 /* SEA STYLE */
 
 #waveCanvas {
-  z-index: 10 !important;
+  z-index: 10;
   width: 100%;
   height: 101%;
-  z-index: 1;
   pointer-events: none;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -528,18 +478,18 @@ section {
   position: absolute;
   width: 24em;
   height: 24em;
-  bottom: -14em;
+  bottom: -10.5em;
   left: 90%;
-  margin-left: -12em;
+  margin-left: -12.5em;
   overflow: hidden;
   font-size: 1em;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
-  -webkit-transform: scale(0.2);
-  -moz-transform: scale(0.2);
-  -ms-transform: scale(0.2);
-  transform: scale(0.2);
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  transform: scale(0.1);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -548,7 +498,7 @@ section {
 
 .csstransforms #header:hover .cn-wrapper {
   position: absolute;
-  bottom: -8em;
+  bottom: -9em;
   left:50%;
   border-radius: 50%;
   opacity: 1;
@@ -588,13 +538,10 @@ section {
 }
 
 .cn-button {
-  width: 40px;
-  height: 40px;
-  margin-top:20px;
-  margin-left:-20px;
-  position: absolute;
+  width: 3em;
+  height: 3em;
   bottom: 0%;
-  left: 90%;
+  margin-top: -1.3em;
   z-index: 5;
   border-radius: 50%;
   color: #FF7400;
@@ -620,11 +567,10 @@ section {
 #header:hover .cn-button {
   width:5em;
   height: 5em;
-  margin-top: 1em;
-  margin-left: -2.5em;
+  margin-left: -3em;
   left:50%;
-  bottom: 0px;
-  text-align: center;
+  bottom: 0;
+  margin-bottom: 2em;
   background: #ffe033;
   background: -moz-radial-gradient(center, ellipse cover,  #ffe033 50%, #fff8db 100%);
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#ffe033), color-stop(100%,#fff8db));
@@ -948,23 +894,17 @@ blockquote {
 
 @media only screen and (min-width:320px) {
 
-  .sidebar-div:hover {
-    width: 100%;
-  }
+
 
 }
 @media only screen and (min-width:480px) {
 
-  .sidebar-div:hover {
-    width: 80%;
-  }
+
 
 }
 @media only screen and (min-width:768px) {
 
-  .sidebar-div:hover {
-    width: 50%;
-  }
+
 
 }
 @media only screen and (min-width:1024px) {

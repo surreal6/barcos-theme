@@ -31,33 +31,41 @@
       <!-- header -->
       <header class="header clear" role="banner" id="header">
 
-          <!-- logo 
-          -->
-          <div class="logo">
-            <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/img/logo2.svg" alt="Logo" class="logo-img">
-            </a>
-          </div>
-          <!-- /logo -->
+      <div class="header-div" id="header-div">
 
+        <div class="sun-div">
           <div class="cn-button" id="cn-button"></div>
-          
           <div class="cn-wrapper" id="cn-wrapper">
-            <!-- nav -->
-            <nav class="nav" role="navigation">
-              <!-- <?php html5blank_nav(); ?> -->
-              <ul>
-                <li><a href="index.php/de-que-va-esto/" title="de que vá esto?"><i class="fa fa-question"></i></a></li> 
-                <li><a href="index.php/monograficos/" title="monográficos"><i class="fa fa-map"></i></a></li> 
-                <li><a href="<?php echo home_url(); ?>" title="bitácora"><i class="fa fa-compass"></i></a></li>  
-                <li><a href="index.php/rutas-de-exploracion/" title="rutas de exploración"><i class="fa fa-map-signs"></i></a></li>    
-                <li><a href="index.php/contacto/" title="contacto"><i class="fa fa-envelope"></i></a></li>  
-              </ul>
-            </nav>
-            <!-- /nav -->
-          </div>
-          
-          <div id="cn-overlay" class="cn-overlay"></div>
+              <!-- nav -->
+              <nav class="nav" role="navigation">
+                <!-- <?php html5blank_nav(); ?> -->
+                <ul>
+                  <li><a href="index.php/de-que-va-esto/" title="de que vá esto?"><i class="fa fa-question"></i></a></li> 
+                  <li><a href="index.php/monograficos/" title="monográficos"><i class="fa fa-map"></i></a></li> 
+                  <li><a href="<?php echo home_url(); ?>" title="bitácora"><i class="fa fa-compass"></i></a></li>  
+                  <li><a href="index.php/rutas-de-exploracion/" title="rutas de exploración"><i class="fa fa-map-signs"></i></a></li>    
+                  <li><a href="index.php/contacto/" title="contacto"><i class="fa fa-envelope"></i></a></li>  
+                </ul>
+              </nav>
+              <!-- /nav -->
+          </div>  
+        </div>
+
+        <div class="isla-top-div">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/pruebaisla.svg" alt="isla" class="isla-top-img">
+        </div>
+        
+        <div class="sidebar-content-div">
+          <?php get_sidebar(); ?>
+        </div>
+        
+        <div class="isla-bottom-div">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/pruebaisla2.svg" alt="isla2" class="isla-bottom-img">
+        </div>
+
+        <div id="cn-overlay" class="cn-overlay"></div>
+
+      </div>
   
       </header>
       <!-- /header -->

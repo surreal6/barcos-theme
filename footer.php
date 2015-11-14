@@ -1,35 +1,37 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-				<div class="container footer-div">
+				<div class="footer-div">	
+					<div class="container">
+						<div class="row">
 
-					<div class="row">
+							<div class="two columns">
+								<a><i class="fa fa-arrows fa-rotate-45" onclick="launchFullScreen(document.documentElement);"></i></a>
+								<a href="wp-admin/"><i class="fa fa-home"></i></a>
+							</div>
 
-						<div class="two columns">
-							<a><i class="fa fa-arrows fa-rotate-45" onclick="launchFullScreen(document.documentElement);"></i></a>
-							<a href="wp-admin/"><i class="fa fa-home"></i></a>
+							<div class="five columns">
+								<!--  copyright -->
+								<p class="copyright">
+									All content &copy; <?php echo date('Y'); ?> CC-BY-NC-ND <a href=""><?php bloginfo('name'); ?></a>. 
+								</p>
+								<!-- /copyright -->
+							</div>
+
+							<div class="five columns">
+								<!--  theme copyright -->
+								<p class="copyright">
+									Theme design &copy; <?php echo date('Y'); ?> CC-BY-SA <a href="http://surreal.asturnazari.com">Carlos Padial </a> <?php _e('Powered by', 'html5blank'); ?>
+									<a href="//wordpress.org" title="WordPress"> WordPress </a> &amp;  <a href="//html5blank.com" title="HTML5 Blank"> HTML5 Blank </a>.
+								</p>
+								<!-- / theme copyright -->
+							</div>
+
 						</div>
-
-						<div class="five columns">
-							<!--  copyright -->
-							<p class="copyright">
-								All content &copy; <?php echo date('Y'); ?> CC-BY-NC-ND <a href=""><?php bloginfo('name'); ?></a>. 
-							</p>
-							<!-- /copyright -->
-						</div>
-
-						<div class="five columns">
-							<!--  theme copyright -->
-							<p class="copyright">
-								Theme design &copy; <?php echo date('Y'); ?> CC-BY-SA <a href="http://surreal.asturnazari.com">Carlos Padial </a> <?php _e('Powered by', 'html5blank'); ?>
-								<a href="//wordpress.org" title="WordPress"> WordPress </a> &amp;  <a href="//html5blank.com" title="HTML5 Blank"> HTML5 Blank </a>.
-							</p>
-							<!-- / theme copyright -->
-						</div>
-
+						
 					</div>
-					
+					<!-- /container -->
 				</div>
-
+				<!-- /footer-div -->
 			</footer>
 			<!-- /footer -->
 

@@ -8,10 +8,6 @@
       <?php get_template_part('pagination'); ?>
     </div>
   </div>
-
-  <div class="sidebar-div" id="sidebar-div">
-    <?php get_sidebar(); ?>
-  </div>
   
 </main>
 

@@ -107,9 +107,7 @@ function html5blank_header_scripts()
         wp_register_script('polyfills', get_template_directory_uri() . '/js/lib/polyfills.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('polyfills'); // Enqueue it!
 
-        wp_register_script('sunscript', get_template_directory_uri() . '/js/sun.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('sunscript'); // Enqueue it!
-
+        
     }
 }
 

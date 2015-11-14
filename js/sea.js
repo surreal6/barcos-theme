@@ -98,7 +98,7 @@ var waves = null;
 function loadCanvas() {
         var waveCanvas = document.createElement('canvas');
         waveCanvas.id = "waveCanvas";
-        var list = document.getElementById("header");
+        var list = document.getElementById("header-div");
         list.insertBefore(waveCanvas, list.childNodes[0]); 
 }
 

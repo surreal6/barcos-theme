@@ -3,10 +3,6 @@
 	<main role="main">
 	<!-- section -->
 	<section>
-
-		<div class="sidebar-div" id="sidebar-div">
-			<?php get_sidebar(); ?>
-		</div>
 		
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -15,7 +11,7 @@
 
 			<div class="container single-div">
 
-				<div class="row content-div">
+				<div class="row">
 					
 					<!-- /date and comments details -->
 					<div class="six columns">
@@ -33,7 +29,7 @@
 				</div>
 					
 				
-				<div class="row content-div">
+				<div class="row">
 
 					<!-- /title and thumbnail -->
 					<div class="ten columns title-div">
@@ -54,17 +50,17 @@
 					</div>
 				</div>
 						
-				<div class="row content-div">
+				<div class="row">
 						<span class="twelve columns date-div"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
 				</div>
-				<div class="row content-div">
+				<div class="row">
 				<!-- dynamic content -->
 					<div class="twelve columns">
 						<?php the_content(); // Dynamic Content ?>						
 					</div>
 				</div>
 
-				<div class="row content-div">
+				<div class="row">
 				<!-- categories, tags and edit link -->
 					<div class="four columns categories-div">
 						<?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?>
