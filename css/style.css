@@ -265,7 +265,7 @@ input:focus {
   z-index: 1;
   height: 4em;
   width: 100%;
-  position:fixed;
+  position:relative;
   margin: 0px;
   top:0px;
   background-color: #A5E9FF;
@@ -285,7 +285,7 @@ input:focus {
 
 .header-div:hover {
   height:12em;
-  position:absolute;
+  position:relative;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -457,9 +457,9 @@ section {
   width: 100%;
 }
 
-.footer .fa {
-  font-size: 2em;
-}
+p.copyright {
+    font-size: 1em;
+  }
 
 /*------------------------------------*//*------------------------------------*/
 /*------------------------------------*//*------------------------------------*/
