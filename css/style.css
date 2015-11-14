@@ -334,7 +334,7 @@ input:focus {
   margin-top: -0.6em;
   margin-bottom:0em;
   padding: 1em;
-  height: 200%;
+  height: unset;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -917,9 +917,11 @@ blockquote {
 
 
 }
-@media only screen and (min-width:480px) {
+@media only screen and (max-width:480px) {
 
-
+  .header-div:hover .isla-top-div {
+    margin-left: -8em;
+  }
 
 }
 @media only screen and (min-width:768px) {

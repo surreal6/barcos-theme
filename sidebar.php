@@ -13,11 +13,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="twelve columns">
-        <?php get_template_part('searchform'); ?>
-      </div>
-    </div>
   </div>
 </aside>
 <!-- /sidebar -->
