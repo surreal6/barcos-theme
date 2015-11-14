@@ -228,7 +228,6 @@ input:focus {
 
 .search input {
   width: 100%;
-  background-color: #aa6633;
   border-style: dotted;
   border-width: 2px;
 }
@@ -325,20 +324,58 @@ section {
 .sidebar-div {
   float:left;
   position:relative;
+  margin-top: 100px;
   text-align: center;
   z-index:30;
   width: 20%;
+  height: 0px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
 } 
 
+.isla-div {
+  height:0px;
+  margin: 0px;
+  float: right;
+  margin-right: -10em;
+}
+
+.isla-top{
+  width: 25em;
+  height: 13em;
+  overflow: hidden;
+  position: relative;
+  top:-13em;
+  right:0em;
+}
+
+.isla-bottom{
+  width: 25em;
+  height: 2em;
+  overflow: hidden;
+  position: relative;
+  bottom:0em;
+  right: 0;
+}
+
+.isla-bottom img{
+  position: relative;
+  top: -13em;
+}
+
 .sidebar-div:hover{
   position:absolute;
   width: 50%;
+  height: auto;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
+}
+
+.sidevar-div:hover .isla-div {
+  float: left;
+  margin-right: unset;
 }
 
 .sidebar-div .fa {
@@ -363,18 +400,11 @@ section {
 
 /* sidebar */  /*------------------------------------*/
 .sidebar {
-  overflow: hidden;
-  background-color: #aa6633;
+  background-color: #B4AB9A;
   border-radius: 1em;
   width: 100%;
   height: 100%;
   z-index: 20;
-  background: #fff09d;
-  background: -moz-linear-gradient(top,  #fff09d 1%, #aa6633 100%);
-  background: -webkit-linear-gradient(top,  #fff09d 1%,#aa6633 100%);
-  background: linear-gradient(to bottom,  #fff09d 1%,#aa6633 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff09d', endColorstr='#aa6633',GradientType=0 );
-
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
