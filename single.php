@@ -11,13 +11,15 @@
 
 			<div class="container single-div">
 
+				<!-- /date and comments details -->
 				<div class="row">
-					
-					<!-- /date and comments details -->
+						<span class="twelve columns date-div"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+				</div>
+				
+				<div class="row">
 					<div class="six columns">
 						<br>
 					</div>
-
 					<div class="six columns comments-div">
 						<span class="comments">
 							<?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?>
@@ -27,10 +29,9 @@
 						</div>
 					</div>
 				</div>
-					
+				<!-- /date and comments details -->	
 				
 				<div class="row">
-
 					<!-- /title and thumbnail -->
 					<div class="ten columns title-div">
 						<!-- post title -->
@@ -49,10 +50,7 @@
 						<!-- /post thumbnail -->
 					</div>
 				</div>
-						
-				<div class="row">
-						<span class="twelve columns date-div"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-				</div>
+				
 				<div class="row">
 				<!-- dynamic content -->
 					<div class="twelve columns">
